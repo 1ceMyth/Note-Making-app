@@ -1,0 +1,88 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notes AI Assistant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Nunito', sans-serif;
+            background: linear-gradient(135deg, #d0f0ff, #f0fff4);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 50px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            max-width: 500px;
+            width: 90%;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        p {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            background: #4A90E2;
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            background: #357ABD;
+        }
+
+        .chat-button {
+            background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+            color: #000;
+            font-weight: bold;
+        }
+
+        .chat-button:hover {
+            opacity: 0.9;
+            transform: scale(1.02);
+        }
+
+        .emoji {
+            font-size: 1.2em;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📝 Welcome to Notes Assistant</h1>
+        <p>Save your thoughts and ask the AI about them anytime.</p>
+
+        <a href="/register" class="button">Register</a>
+        <a href="/login" class="button">Login</a>
+        <a href="/chat" class="button chat-button">Chat with AI <span class="emoji">🤖</span></a>
+    </div>
+</body>
+</html>
